@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 
 app.get('/', function (req, res) {
-    res.send('Hi Himanshu, /n Database and Node.js ka Server ready ho gya hai.')
+    res.send('Hi Himanshu,  Database and Node.js ka Server ready ho gya hai.')
 })
 
 
