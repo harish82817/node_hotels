@@ -24,7 +24,13 @@ const menuItemRoutes = require('./routes/menuItemRoutes');
 app.use('/person', personRoutes);
 app.use('/menu', menuItemRoutes);
 
+connectDB().then(() => {
+    app.listen(PORT, () => {
+        console.log(`App listening on port ${PORT}`);
+    });
+});
 
-app.listen(PORT, () => {
-    console.log("listening on port 3000");
-})
+
+// app.listen(PORT, () => {
+//     console.log("listening on port 3000");
+// })
